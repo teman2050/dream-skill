@@ -7,7 +7,7 @@ description: >
   读取 OpenClaw 原生 memory/YYYY-MM-DD.md 日记文件，蒸馏后主动更新 MEMORY.md 快照；
   值得永久保留的内容写入 ledger（只追加，永不删除）；内容索引写 Obsidian。
   搜索全部委托原生 openclaw memory search，不自建索引。
-version: 5.0.0
+version: 0.1.0
 metadata:
   openclaw:
     emoji: "🌙"
