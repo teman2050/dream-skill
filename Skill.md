@@ -1,27 +1,25 @@
 ---
 name: dream
-description: >
-  主动维护 MEMORY.md 的记忆蒸馏技能。触发场景：(1) 每日 03:30 定时蒸馏（空闲时执行，
-  忙则顺延至 06:00）；(2) 用户说 "dream" / "复盘" / "整理记忆" / "你记得我什么"；
+description: >-
+  主动维护 MEMORY.md 的记忆蒸馏技能。触发场景：
+  (1) 每日 03:30 定时蒸馏（空闲时执行，忙则顺延至 06:00）；
+  (2) 用户说 "dream" / "复盘" / "整理记忆" / "你记得我什么"；
   (3) 用户要求收录内容到 Obsidian 索引。
-  读取 OpenClaw 原生 memory/YYYY-MM-DD.md 日记文件，蒸馏后主动更新 MEMORY.md 快照；
-  值得永久保留的内容写入 ledger（只追加，永不删除）；内容索引写 Obsidian。
-  搜索全部委托原生 openclaw memory search，不自建索引。
-version: 0.1.0
+version: 0.1.1
 metadata:
   openclaw:
     emoji: "🌙"
     homepage: https://github.com/teman2050/dream-skill
-    requires:
-      bins:
-        - jq
-        - wc
-      config:
-        - DREAM_VAULT_PATH
-    install:
-      - kind: brew
-        formula: jq
-        bins: [jq]
+requires:
+  bins:
+    - jq
+    - wc
+config:
+  - DREAM_VAULT_PATH
+install:
+  - kind: brew
+    formula: jq
+    bins: [jq]
 ---
 
 # Dream — 主动记忆蒸馏 v5
