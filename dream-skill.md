@@ -11,6 +11,7 @@ version: 0.1.0
 metadata:
   openclaw:
     emoji: "🌙"
+    homepage: https://github.com/teman2050/dream-skill
     requires:
       bins:
         - jq
